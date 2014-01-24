@@ -1,3 +1,61 @@
+/*@font-face {
+    font-family: 'open_sansregular';
+    src: url('fuentes/OpenSans-Regular-webfont.eot');
+    src: url('fuentes/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fuentes/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fuentes/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+
+@font-face {
+	font-family: 'puls4';
+	src:url('fuentes/puls4.eot');
+	src:url('fuentes/puls4.eot?#iefix') format('embedded-opentype'),
+		url('fuentes/puls4.woff') format('woff'),
+		url('fuentes/puls4.ttf') format('truetype'),
+		url('fuentes/puls4.svg#puls4') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'puls4';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-flecha-arriba:before {
+	content: "\e600";
+}
+.icon-flecha-abajo:before {
+	content: "\e601";
+}
+.icon-estrella:before {
+	content: "\e602";
+	margin-right: .5em;
+	position: relative;
+	top: .1em;
+
+
+}
+.icon-lapiz:before {
+	content: "\e603";
+	margin-right: .5em;
+}
+
+
 a
 {
 	color: #22BCE0;
@@ -5,7 +63,9 @@ a
 body
 {
 	background: #EEEEEE;
-	font-family: Arial;
+	/*font-family: 'open_sansregular';*/
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: Arial;*/
 	font-size: 16px;
 }
 footer
@@ -70,14 +130,14 @@ header #logo img
 }
 nav
 {
-	background: #80BCA3;
+	background:  #5B8BCD; /* #80BCA3 */
 	position: relative;
 }
 nav ul
 {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 0 6em 0 .5em;
 }
 nav ul li
 {
@@ -171,6 +231,22 @@ nav ul #publicar_nav a
 	position: absolute;
 	right: 3%;
 	top: 100%;
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .guardar_item
+{
+	color: #FFBE2C;
+}
+#contenido .item .votacion .down
+{
+	color: #DD4F24;
+}
+#contenido .item .votacion .up
+{
+	color: #22BC68;
 }
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item
