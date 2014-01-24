@@ -277,9 +277,25 @@ nav ul #publicar_nav a:hover{
 {
 	float: right;
 }
-
-
-
+#contenido .item .votacion .comentarios_item
+{
+	background: #878787;
+	border-radius: 10%;
+	color: white;
+	margin: 0 0 0 .5em;
+	padding: 3px;
+	position: relative;
+}
+#contenido .item .votacion .comentarios_item:after
+{
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 3px solid #878787;
+	content: "";
+	left: 13px;
+	position: absolute;
+	top: 100%;
+}
 @media screen and (min-width: 800px){
 
 	#contenido
