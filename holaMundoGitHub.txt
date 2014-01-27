@@ -1,3 +1,2 @@
 Hola mundo de github!
 Esto es una modificación para validar
-un tercer cambio sin sincronizar el segundo.
