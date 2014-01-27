@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 vacio
+=======
+Hola mundo de github!
+Esto es una modificación para validar
+>>>>>>> parent of 752811b... u tercer commit
