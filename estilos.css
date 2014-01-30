@@ -9,7 +9,7 @@
     font-style: normal;
 
 }*/
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 @font-face {
 	font-family: 'puls4';
@@ -189,6 +189,12 @@ nav ul #publicar_nav a
 }
 nav ul #publicar_nav a:hover{
 	box-shadow: 0 0 30px yellow;
+}
+
+nav ul #publicar_nav a.disabled {
+	background-color: grey;
+	cursor: default;
+	box-shadow: none;
 }
 #contenido
 {
