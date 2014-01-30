@@ -16,12 +16,14 @@ var id = setInterval(function(){
 
 function mostrarOcultarFormulario(tito){
 	tito.preventDefault();
+	tito.stopPropagation();
 	$form.slideToggle();
 	$lista.slideToggle();
 }
 
 function agregarPost(e){
 	e.preventDefault();
+	e.stopPropagation();
 	var titulo = $titulo.val(),
 		url = $url.val(),
 		clone = $primerPost.clone();
@@ -38,6 +40,10 @@ function agregarPost(e){
 	$url.val('');
 	clone.slideDown();
 }
+
+
+$('nav').on('click', function(){ console.log("Soy un nav y me hicieron click");})
+$('nav ul').on('click', function(){ console.log("Soy un ul y me hicieron click");})
 
 $('#publicar_nav a').click( mostrarOcultarFormulario );
 $('#formulario').on('submit', agregarPost)

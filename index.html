@@ -30,7 +30,7 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#" class="icon-lapiz">Publicar</a>
+				<a href="#" data-nombre="pablo" class="icon-lapiz">Publicar</a>
 			</li>
 		</ul>
 	</nav>
@@ -216,7 +216,12 @@
 	<script src="formulario.js"></script>
 	<script>
 		$(function(){
-			
+			$('#publicar_nav a').on('click', function(tito) {
+				tito.preventDefault();
+				$(this).toggleClass('disabled');
+				var data = $(this).data();
+				$(this).data('apellido', 'rigazzi');
+			});
 		});
 	</script>
 </body>
