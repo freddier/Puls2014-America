@@ -6,7 +6,7 @@ var $form  = $('#formulario'),
 	$aside = $('aside');
 
 var estadoAside = $aside.css('display');
-var LASTFM_API_KEY = '42f75f939105d2110d6a0daf27db431c';
+var LASTFM_API_KEY = '';
 
 if (sessionStorage.getItem('titulo')) {
 	$titulo.val(sessionStorage.getItem('titulo'));
