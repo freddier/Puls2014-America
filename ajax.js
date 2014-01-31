@@ -1,5 +1,5 @@
 $(function(){
-	$('footer .logos').load('logos_footer.html #maestrosdelweb');
+	$('footer .logos').load('logos_footer.html');
 
 	$.get('usuario.json', function(info) {
 		var avatar   = new Image();
@@ -33,10 +33,10 @@ function procesarGeoInfo(datos) {
 	var pais   = res.country;
 	var woeid  = res.woeid;
 
-	$('#geo')
-		.prepend('<p><strong>'+barrio+'</strong><br>'+ciudad+', '+pais+'</p>');
-
 	obtenerClima(woeid);
+	
+	$('#clima')
+		.append('<p><strong>'+barrio+'</strong><br>'+ciudad+', '+pais+'</p>');
 }
 
 function obtenerClima(woeid) {
@@ -61,11 +61,9 @@ function procesarClima(datos) {
 	var img   = new Image();
 	img.src   = "http://l.yimg.com/a/i/us/we/52/"+code+".gif"
 
-console.log(clima);
-
 	$('#clima')
 		.append(img)
-		.append(temp+' '+unit+'º');
+		.append('<p>'+temp+' '+unit+'º</p>');
 
 }
 
