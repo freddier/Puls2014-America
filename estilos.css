@@ -196,6 +196,16 @@ nav ul #publicar_nav a.disabled {
 	cursor: default;
 	box-shadow: none;
 }
+#clima {
+	display: inline-block;
+}
+#clima p {
+	display: inline-block;
+	vertical-align: top;
+}
+#clima p:first-child {
+	margin-right: 1em;
+}
 #contenido
 {
 	margin: 1em; 
@@ -205,7 +215,7 @@ nav ul #publicar_nav a.disabled {
 	background: white;
 	border-bottom: 3px solid #22BCE0;
 	margin-bottom: 3em;
-	min-height: 128px;
+	min-height: 168px;
 	position: relative;
 }
 #contenido .item .autor_item
@@ -229,6 +239,10 @@ nav ul #publicar_nav a.disabled {
 	display: inline-block;
 	padding: 0.2em 0.5em;
 	text-decoration: none;
+	transition: background 0.3s ease;
+}
+#contenido .item .datos_item .tag_item:hover {
+	background: #22BCE0;
 }
 #contenido .item .imagen_item
 {
@@ -244,12 +258,14 @@ nav ul #publicar_nav a.disabled {
 	font-size: 1.2em;
 	font-style: italic;
 	margin-bottom: 0;
-	padding: 1em 1em 0 0;
+	margin-top: 0.5em;
+	padding: 0 1em 0 0;
 }
 #contenido .item .titulo_item a
 {
 	color: #444;
 	text-decoration: none;
+	text-overflow: scroll;
 }
 #contenido .item .votacion
 {
@@ -283,7 +299,9 @@ nav ul #publicar_nav a.disabled {
 {
 	float: right;
 }
-
+.nuevo {
+	animation: nuevoArticulo 1s;
+}
 
 /**
  * Formularios
@@ -308,6 +326,46 @@ nav ul #publicar_nav a.disabled {
 	font-style: italic;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 	color: white;
+}
+
+
+
+@keyframes nuevoArticulo
+{
+	0% { transform: rotate(3deg); }
+	25% { transform: rotate(-3deg); }
+	50% { transform: rotate(3deg); }
+	75% { transform: rotate(-3deg); }
+	100% { transform: rotate(0deg); }
+}
+
+@media screen and (max-width: 530px){
+	nav ul {
+		padding: 0;
+	}
+	nav ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul #publicar_nav {
+		position: relative;
+		top: 0;
+	}
+
+	nav ul #publicar_nav a {
+		border-radius: 0px;
+	}
+
+	.formulario {
+		text-align: center;
+	}
+
+	.formulario input[type="submit"]{
+		display: block;
+		margin-top: 0.5em;
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 800px){
@@ -339,10 +397,4 @@ nav ul #publicar_nav a.disabled {
 	{
 		width: 100%;
 	}
-
-
 }
-
-
-
-
