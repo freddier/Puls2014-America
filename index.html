@@ -41,6 +41,8 @@
 		<input type="submit" value="Agregar">
 	</form>
 	<aside>
+		<div id="clima"></div>
+		<div id="geo"></div>
 		<video width="320" height="240" controls autoplay>
 			<source src="lecturas.mp4" type="video/mp4">
 			<source src="lecturas.ogg" type="video/ogg">
@@ -212,17 +214,15 @@
 		<p>
 			mejorando.la 2014
 		</p>
+		<div class="logos"></div>
 	</footer>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="formulario.js"></script>
+	<script src="geo.js"></script>
+	<script src="ajax.js"></script>
 	<script>
 		$(function(){
-			$('#publicar_nav a').on('click', function(tito) {
-				tito.preventDefault();
-				$(this).toggleClass('disabled');
-				var data = $(this).data();
-				$(this).data('apellido', 'rigazzi');
-			});
+
 		});
 	</script>
 </body>
