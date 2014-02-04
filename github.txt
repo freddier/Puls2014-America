@@ -4,7 +4,7 @@ Hosting barato normal --> /public_html/ <-- FTP
 	index.php
 	images
 	leonidas.jpg
-www.fuckencio.com
+www.dogecoin.com
 
 SISTEMA DE CONTROL DE VERSIONES 
 
@@ -32,7 +32,7 @@ Repositorio de código GITHUB (master)
 		* experimental local
 	* master (servidor.com) REPO PRODUCCION
 
-
+Fukensio rules
 
 
 
