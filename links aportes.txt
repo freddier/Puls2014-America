@@ -1,0 +1,6 @@
+aportes
+git: hhttp://git-scm.com/book/es
+app: http://try.github.io/levels/1/challenges/1
+Videos:
+youtube.com/watch?v=udughzlN5M4 
+youtube.com/watch?v=C_xFDRsEM7A 
