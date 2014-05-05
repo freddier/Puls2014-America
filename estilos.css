@@ -72,6 +72,35 @@ body
 	/*font-family: Arial;*/
 	font-size: 16px;
 }
+body #publicar_nav a
+{
+	color: white;
+	text-decoration: none;
+}
+body #publicar_nav
+{
+	color: none;
+	position: absolute;
+	right: 1em;
+	top: 65px;
+}
+body #publicar_nav
+{
+	background: #22BCE0;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	font-style: italic;
+	padding: 0.6em 0.8em;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+body #publicar_nav:hover{
+	box-shadow: 0 0 30px yellow;
+}
+body #publicar_nav a.disabled {
+	background-color: grey;
+	cursor: default;
+	box-shadow: none;
+}
 footer
 {
 	background: #22BCE0;
@@ -171,30 +200,6 @@ nav ul li a
 }
 nav ul li a:hover{
 	background: #344B54;
-}
-nav ul #publicar_nav
-{
-	position: absolute;
-	right: 0;
-	top: -0.1em;
-}
-nav ul #publicar_nav a
-{
-	background: #22BCE0;
-	border-radius: 5px;
-	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
-	font-style: italic;
-	padding: 0.6em 0.8em;
-	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
-}
-nav ul #publicar_nav a:hover{
-	box-shadow: 0 0 30px yellow;
-}
-
-nav ul #publicar_nav a.disabled {
-	background-color: grey;
-	cursor: default;
-	box-shadow: none;
 }
 #contenido
 {
