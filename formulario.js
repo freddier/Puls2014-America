@@ -31,7 +31,10 @@ function agregarPost(e){
 	clone.find('.titulo_item a')
 		.text(titulo)
 		.attr('href', url)
-	
+
+	//CAMBIAR IMAGEN
+	clone.find(".imagen_item img")
+		.attr("src", "http://lorempixel.com/192/256/");
 	clone.hide()
 
 	$lista.prepend(clone)
