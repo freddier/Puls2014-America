@@ -241,10 +241,10 @@ nav ul #publicar_nav a.disabled {
 }
 #contenido .item .titulo_item
 {
-	font-size: 1.2em;
+	font-size: 1em;
 	font-style: italic;
-	margin-bottom: 0;
-	padding: 1em 1em 0 0;
+	margin: 1em 0em 0em 0em;
+	padding: 0.3em 0.3em 0 0;
 }
 #contenido .item .titulo_item a
 {
@@ -310,37 +310,86 @@ nav ul #publicar_nav a.disabled {
 	color: white;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 320px){
 
+	#contenido .item .autor_item 
+	{
+		font-size: 0.8em;
+	}
+	#contenido .item .datos_item 
+	{
+		margin: 1em 1em 0 0;
+	}
+	#contenido .item .imagen_item 
+	{
+		float: left;
+		margin-right: 0.1em;
+	}
+	#contenido .item .titulo_item 
+	{
+		font-size: .9em;
+	}
+}
+@media screen and (min-width: 768px){
 	#contenido
 	{
 		overflow: hidden;
 	}
-	#contenido .item 
+	#contenido .item
 	{
-		width: 49%;
 		float: left;
+		width: 49%;
 	}
-	#contenido .item:nth-child(odd){
+	#contenido .item .datos_item 
+	{
+		margin: 1em 1em 0 0;
+	}
+	#contenido .item .imagen_item 
+	{
+		float: left;
+		margin-right: .3em;
+		padding: 0;
+		height: 128px;
+	}
+	#contenido .item:nth-child(odd)
+	{
 		margin-right: 2%;
 	}
-
 }
+@media screen and (min-width: 1024px){
 
-@media screen and (min-width: 1000px){
 	aside
 	{
 		display: block;
+		margin: 1em;
 		float: right;
-		margin:1em;
-		width: 25%;
+		width: 20%;
 	}
-	aside video
+	aside video 
 	{
 		width: 100%;
 	}
-
-
+	#contenido .item .autor_item 
+	{
+		font-size: 0.8em;
+		margin-top: 0.5em;
+	}
+	#contenido .item .titulo_item a 
+	{
+		color: #444;
+		text-decoration: none;
+		font-size: 0.9em;
+	}
+	#contenido .item .titulo_item 
+	{
+		font-size: 1em;
+		margin-top: 0.1em;
+	}
+	#contenido .item .datos_item .tag_item 
+	{
+		position: absolute;
+		top: 6em;
+	}
 }
 
 
